@@ -81,7 +81,6 @@ namespace WPFStampante.Models
                         {
                             string[] values = line.Split(',');
 
-                            // Assegna i valori ai campi della stampante
                             Inchiostro[0] = int.Parse(values[0]);
                             Inchiostro[1] = int.Parse(values[1]);
                             Inchiostro[2] = int.Parse(values[2]);
@@ -93,7 +92,6 @@ namespace WPFStampante.Models
             }
             catch (Exception ex)
             {
-                // Gestisci eventuali eccezioni durante la lettura del file
                 Console.WriteLine($"Errore durante la lettura del file: {ex.Message}");
             }
         }
